@@ -5,7 +5,7 @@ local ply = LocalPlayer()
 hook.Add( "PlayerSay", "checkForChatCommand", checkForChatCommand )
 local prefixlen = string.len(komutPrefiksi)
 local chatCommands = {}
-local komutTipleri = {}
+komutTipleri = {}
 
 local function checkForChatCommand(ply, msg, takm)
     if not komutPrefiksi == "" then
